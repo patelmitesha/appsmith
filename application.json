@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "id": "Page1",
+      "isDefault": true
+    },
+    {
+      "id": "Advertisments",
+      "isDefault": false
+    },
+    {
+      "id": "Posts",
+      "isDefault": false
+    },
+    {
+      "id": "Subjets",
+      "isDefault": false
+    },
+    {
+      "id": "Advertisement Details",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#EAEDFB",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
