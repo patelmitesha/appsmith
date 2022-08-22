@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Advertisments",
+    "pageId": "Advertisements",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -109,7 +109,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Advertisments_AllAdvertisements",
+  "id": "Advertisements_AllAdvertisements",
   "deleted": false,
   "gitSyncId": "62e162ff1d816b5fddf441a6_62e2c0b84003a7259a2f230d"
 }

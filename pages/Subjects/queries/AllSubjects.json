@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Subjets",
+    "pageId": "Subjects",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -109,7 +109,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Subjets_AllSubjects",
+  "id": "Subjects_AllSubjects",
   "deleted": false,
   "gitSyncId": "62e162ff1d816b5fddf441a6_62e2c1974003a7259a2f2340"
 }
