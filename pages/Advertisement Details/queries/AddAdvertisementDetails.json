@@ -73,12 +73,12 @@
         },
         "insert": {
           "documents": {
-            "data": "[{advertisementno: \"{{lstAdvertisementNo.selectedOptionValue}}\", postcode:\"{{lstPostCode.selectedOptionValue}}\", subjectcode:\"{{lstSubjectCode .selectedOptionValue}}\"}]"
+            "data": "[{\n\tadvertisementno: \"{{lstAdvertisementNo.selectedOptionValue}}\", \n\tpostcode:\"{{lstPostCode.selectedOptionValue}}\", \n\tsubjectcode:\"{{lstSubjectCode .selectedOptionValue}}\",\nmaximumageallowed : \"{{txtMaxAgeAllowed.text}}\",\npostsforgen : \"{{txtPostGen.text}}\",\npostsforsc : \"{{txtPostSC.text}}\",\npostsforst : \"{{txtPostST.text}}\",\npostsforobc : \"{{txtPostOBC.text}}\",\ntotalposts : \"{{txtPostTotal.text}}\",\ndivorceeagerelaxation : \"{{txtDivorceeAgeRelaxation.text}}\",\nscagerelaxation : \"{{txtSCAgeRelaxation.text}}\",\nstagerelaxation : \"{{txtSTAgeRelaxation.text}}\",\nobcagerelaxation : \"{{txtOBCAgeRelaxation.text}}\",\npwdagerelaxation : \"{{txtPWDAgeRelaxation.text}}\",\nyesnoques_show : \"{{chkShowYesNoQuestion.value}}\",\nyesno_question : \"{{txtYesNoQuestion.text}}\",\ntextques_show : \"{{chkShowTextQuestion.value}}\",\ntext_question : \"{{txtTextQuestion.text}}\",\nnumericques_show : \"{{chkShowNumericQuestion.value}}\",\nnumeric_question : \"{{txtNumericQuestion.text}}\",\nessentialqualification : \"{{txtEssentialQualification.text}}\",\nminexp : \"{{txtMinimumExp.text}}\",\nallowupload : \"{{chkAllowUpload.value}}\",\nreceivefees : \"{{chkReceiveFees.value}}\",\nfeestobereceived : \"{{txtFees.text}}\",\nfeesrelaxationforsc : \"{{txtSCFeesRelaxation.text}}\",\nfeesrelaxationforst : \"{{txtSTFeesRelaxation.text}}\",\nfeesrelaxationforobc : \"{{txtOBCFeesRelaxation.text}}\",\nfeesrelaxationforpwd : \"{{txtFeesRelaxatonPWD.text}}\",\nfeesrelaxationforews : \"{{txtFeesRelaxatonEWS.text}}\",\nfeesrelaxationforexserviceman : \"{{txtFeesRelaxatonExServiceman.text}}\",\nfeesrelaxationforfemale : \"{{txtFeesRelaxationWomen.text}}\",\nvalidator : \"{{txtValidator.text}}\",\nvalidationMessage : \"{{txtValidationMessage.text}}\"}\n\t]"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"advertisementdetails\",\n  \"documents\": [{advertisementno: \"{{lstAdvertisementNo.selectedOptionValue}}\", postcode:\"{{lstPostCode.selectedOptionValue}}\", subjectcode:\"{{lstSubjectCode .selectedOptionValue}}\"}]\n}\n",
+            "data": "{\n  \"insert\": \"advertisementdetails\",\n  \"documents\": [{\n\tadvertisementno: \"{{lstAdvertisementNo.selectedOptionValue}}\", \n\tpostcode:\"{{lstPostCode.selectedOptionValue}}\", \n\tsubjectcode:\"{{lstSubjectCode .selectedOptionValue}}\",\nmaximumageallowed : \"{{txtMaxAgeAllowed.text}}\",\npostsforgen : \"{{txtPostGen.text}}\",\npostsforsc : \"{{txtPostSC.text}}\",\npostsforst : \"{{txtPostST.text}}\",\npostsforobc : \"{{txtPostOBC.text}}\",\ntotalposts : \"{{txtPostTotal.text}}\",\ndivorceeagerelaxation : \"{{txtDivorceeAgeRelaxation.text}}\",\nscagerelaxation : \"{{txtSCAgeRelaxation.text}}\",\nstagerelaxation : \"{{txtSTAgeRelaxation.text}}\",\nobcagerelaxation : \"{{txtOBCAgeRelaxation.text}}\",\npwdagerelaxation : \"{{txtPWDAgeRelaxation.text}}\",\nyesnoques_show : \"{{chkShowYesNoQuestion.value}}\",\nyesno_question : \"{{txtYesNoQuestion.text}}\",\ntextques_show : \"{{chkShowTextQuestion.value}}\",\ntext_question : \"{{txtTextQuestion.text}}\",\nnumericques_show : \"{{chkShowNumericQuestion.value}}\",\nnumeric_question : \"{{txtNumericQuestion.text}}\",\nessentialqualification : \"{{txtEssentialQualification.text}}\",\nminexp : \"{{txtMinimumExp.text}}\",\nallowupload : \"{{chkAllowUpload.value}}\",\nreceivefees : \"{{chkReceiveFees.value}}\",\nfeestobereceived : \"{{txtFees.text}}\",\nfeesrelaxationforsc : \"{{txtSCFeesRelaxation.text}}\",\nfeesrelaxationforst : \"{{txtSTFeesRelaxation.text}}\",\nfeesrelaxationforobc : \"{{txtOBCFeesRelaxation.text}}\",\nfeesrelaxationforpwd : \"{{txtFeesRelaxatonPWD.text}}\",\nfeesrelaxationforews : \"{{txtFeesRelaxatonEWS.text}}\",\nfeesrelaxationforexserviceman : \"{{txtFeesRelaxatonExServiceman.text}}\",\nfeesrelaxationforfemale : \"{{txtFeesRelaxationWomen.text}}\",\nvalidator : \"{{txtValidator.text}}\",\nvalidationMessage : \"{{txtValidationMessage.text}}\"}\n\t]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -108,9 +108,40 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "chkAllowUpload.value",
+      "chkReceiveFees.value",
+      "chkShowNumericQuestion.value",
+      "chkShowTextQuestion.value",
+      "chkShowYesNoQuestion.value",
       "lstAdvertisementNo.selectedOptionValue",
       "lstPostCode.selectedOptionValue",
-      "lstSubjectCode .selectedOptionValue"
+      "lstSubjectCode .selectedOptionValue",
+      "txtDivorceeAgeRelaxation.text",
+      "txtEssentialQualification.text",
+      "txtFees.text",
+      "txtFeesRelaxationWomen.text",
+      "txtFeesRelaxatonEWS.text",
+      "txtFeesRelaxatonExServiceman.text",
+      "txtFeesRelaxatonPWD.text",
+      "txtMaxAgeAllowed.text",
+      "txtMinimumExp.text",
+      "txtNumericQuestion.text",
+      "txtOBCAgeRelaxation.text",
+      "txtOBCFeesRelaxation.text",
+      "txtPWDAgeRelaxation.text",
+      "txtPostGen.text",
+      "txtPostOBC.text",
+      "txtPostSC.text",
+      "txtPostST.text",
+      "txtPostTotal.text",
+      "txtSCAgeRelaxation.text",
+      "txtSCFeesRelaxation.text",
+      "txtSTAgeRelaxation.text",
+      "txtSTFeesRelaxation.text",
+      "txtTextQuestion.text",
+      "txtValidationMessage.text",
+      "txtValidator.text",
+      "txtYesNoQuestion.text"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
