@@ -19,6 +19,14 @@
     {
       "id": "Advertisement Details",
       "isDefault": false
+    },
+    {
+      "id": "New Course Config",
+      "isDefault": false
+    },
+    {
+      "id": "Add Course",
+      "isDefault": false
     }
   ],
   "viewMode": false,

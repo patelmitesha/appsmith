@@ -2101,7 +2101,7 @@
                 "textarea"
               ],
               "topRow": 27,
-              "bottomRow": 32,
+              "bottomRow": 31,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -2987,11 +2987,11 @@
                   "key": "borderRadius"
                 }
               ],
-              "text": "Submit",
+              "text": "Save",
               "isDisabled": false,
               "key": "7iexw8f4rw",
               "isDeprecated": false,
-              "rightColumn": 36,
+              "rightColumn": 33,
               "isDefaultClickDisabled": true,
               "widgetId": "ggkf9e53lx",
               "isVisible": true,
