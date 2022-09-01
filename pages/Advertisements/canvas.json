@@ -679,8 +679,7 @@
                 }
               ],
               "privateWidgets": {
-                "Text1": true,
-                "Text2": true
+                "undefined": true
               },
               "key": "wq0eo75wlg",
               "backgroundColor": "transparent",

@@ -27,6 +27,22 @@
     {
       "id": "Add Course",
       "isDefault": false
+    },
+    {
+      "id": "Logins",
+      "isDefault": false
+    },
+    {
+      "id": "Applications",
+      "isDefault": false
+    },
+    {
+      "id": "Qualifications",
+      "isDefault": false
+    },
+    {
+      "id": "Experiences",
+      "isDefault": false
     }
   ],
   "viewMode": false,
