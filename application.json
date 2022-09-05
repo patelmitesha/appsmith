@@ -1,8 +1,8 @@
 {
   "pages": [
     {
-      "id": "Page1",
-      "isDefault": true
+      "id": "ApplicationData",
+      "isDefault": false
     },
     {
       "id": "Advertisements",
@@ -30,7 +30,7 @@
     },
     {
       "id": "Logins",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Applications",

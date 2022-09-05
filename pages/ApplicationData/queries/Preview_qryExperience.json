@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "AllSubjects",
+    "name": "Preview_qryExperience",
     "datasource": {
       "name": "OSAR DB",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "ApplicationData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -28,7 +28,7 @@
           }
         },
         "collection": {
-          "data": "subjects"
+          "data": "experiences"
         },
         "command": {
           "data": "FIND"
@@ -59,7 +59,7 @@
             "data": ""
           },
           "query": {
-            "data": ""
+            "data": "{applicationid:ObjectId(\"{{lstApplications.selectedItem._id}}\")}"
           },
           "sort": {
             "data": ""
@@ -78,7 +78,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"subjects\",\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
+            "data": "{\n  \"find\": \"experiences\",\n  \"filter\": {applicationid:ObjectId(\"{{lstApplications.selectedItem._id}}\")},\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -99,17 +99,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.find.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "lstApplications.selectedItem._id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_AllSubjects",
+  "id": "ApplicationData_Preview_qryExperience",
   "deleted": false,
-  "gitSyncId": "62e162ff1d816b5fddf441a6_62e2be5b4003a7259a2f2286"
+  "gitSyncId": "62e162ff1d816b5fddf441a6_63163dc81df89313e257913a"
 }

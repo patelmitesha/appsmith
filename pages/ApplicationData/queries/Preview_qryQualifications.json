@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "PostByPostCode",
+    "name": "Preview_qryQualifications",
     "datasource": {
       "name": "OSAR DB",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "ApplicationData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -28,7 +28,7 @@
           }
         },
         "collection": {
-          "data": "posts"
+          "data": "qualifications"
         },
         "command": {
           "data": "FIND"
@@ -59,7 +59,7 @@
             "data": ""
           },
           "query": {
-            "data": ""
+            "data": "{applicationid:ObjectId(\"{{lstApplications.selectedItem._id}}\")}"
           },
           "sort": {
             "data": ""
@@ -78,7 +78,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"posts\",\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
+            "data": "{\n  \"find\": \"qualifications\",\n  \"filter\": {applicationid:ObjectId(\"{{lstApplications.selectedItem._id}}\")},\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -99,17 +99,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.find.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "lstApplications.selectedItem._id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_PostByPostCode",
+  "id": "ApplicationData_Preview_qryQualifications",
   "deleted": false,
-  "gitSyncId": "62e162ff1d816b5fddf441a6_62e2bb834003a7259a2f21c0"
+  "gitSyncId": "62e162ff1d816b5fddf441a6_63163b839b89144767c6b517"
 }
